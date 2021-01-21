@@ -1,0 +1,3 @@
+[submodule "KitProtocol_Parser"]
+	path = KitProtocol_Parser
+	url = git@github.com:MicrochipTech/KitProtocol_Parser.git
