@@ -98,7 +98,7 @@ enum kit_protocol_status hal_i2c_wake(uint32_t device_addr)
     uint32_t bdrt = 400000;
     uint8_t data[4];
 
-    data[0] = 0x00;
+    data[0] = 0x01;
 
     if (bdrt != 100000)   // if not already at 100KHz, change it
     {
@@ -107,8 +107,16 @@ enum kit_protocol_status hal_i2c_wake(uint32_t device_addr)
 
     while (SERCOM2_I2C_IsBusy() == true);
 
-    // Send the 00 address as the wake pulse; part will NACK, so don't check for status
-    SERCOM2_I2C_Write(0x00, (uint8_t*)&data[0], 1);
+    if (g_selected_device_type != DEVICE_TYPE_ECC204)
+    {
+        // Send the 00 address as the wake pulse; part will NACK, so don't check for status
+        SERCOM2_I2C_Write(0x00, (uint8_t*)&data[0], 1);
+    }
+    else
+    {
+        SERCOM2_I2C_Write((uint16_t)device_addr, NULL, 0);
+    }
+    
 
     /* Wait for the I2C transfer to complete */
     while (SERCOM2_I2C_IsBusy() == true);
@@ -204,7 +212,7 @@ enum kit_protocol_status hal_i2c_send(uint32_t device_addr, uint8_t *txdata, uin
     {
         while (SERCOM2_I2C_IsBusy() == true);
 
-        if (SERCOM2_I2C_Write((device_addr >> 1), &txdata[0], *txlength) == true)
+        if (SERCOM2_I2C_Write((device_addr >> 1), txdata, *txlength) == true)
         {
             /* Wait for the I2C transfer to complete */
             while (SERCOM2_I2C_IsBusy() == true);
@@ -325,6 +333,11 @@ enum kit_protocol_status hal_i2c_receive(uint32_t device_addr, uint8_t *rxdata, 
                 status = KIT_STATUS_RX_FAIL;
                 break;
             }
+            if ((DEVICE_TYPE_TA100 != g_selected_device_type) && (read_length >= 0xFF))
+            {
+                status = KIT_STATUS_RX_NO_RESPONSE;
+                break;
+            }
 
             /* Read given length bytes from device */
             if (KIT_STATUS_SUCCESS != (status = hal_i2c_receive_peripheral(device_addr, &rxdata[length_size],
@@ -352,6 +365,11 @@ enum kit_protocol_status hal_i2c_receive(uint32_t device_addr, uint8_t *rxdata, 
         }
     }
     while (0);
+
+    if (KIT_STATUS_SUCCESS != status)
+    {
+        read_length = length_size;
+    }
 
     *rxlength = read_length;
     return status;
@@ -527,9 +545,9 @@ enum kit_protocol_status aes_discover(uint8_t device_addr, uint8_t* device_rev, 
 void hal_i2c_discover(device_info_t* device_list, uint8_t* dev_count)
 {
     enum kit_protocol_status ret_code;
-    uint8_t probe_data[] = {0x00};
-    uint16_t probe_data_size = sizeof(probe_data);
+    uint16_t probe_data_size = 0;
     uint8_t i2c_address;
+    device_type_t current_dev = DEVICE_TYPE_UNKNOWN;
 
     *dev_count = 0;
     (void)hal_i2c_wake(0x00);
@@ -537,7 +555,7 @@ void hal_i2c_discover(device_info_t* device_list, uint8_t* dev_count)
     for (i2c_address = 255; i2c_address > 2; i2c_address -= 2)
     {
         //Probe for device presence
-        if (KIT_STATUS_SUCCESS == (ret_code = hal_i2c_send(i2c_address, probe_data, &probe_data_size)))
+         if (KIT_STATUS_SUCCESS == (ret_code = hal_i2c_send(i2c_address, NULL, &probe_data_size)))
         {
             if ((KIT_STATUS_SUCCESS == (ret_code = ca_discover(i2c_address, device_list->dev_rev, &(device_list->device_type)))) ||
                 (KIT_STATUS_SUCCESS == (ret_code = ta_discover(i2c_address, device_list->dev_rev, &(device_list->device_type)))) ||
@@ -546,6 +564,7 @@ void hal_i2c_discover(device_info_t* device_list, uint8_t* dev_count)
                 device_list->address = i2c_address - 0x01;
                 device_list->bus_type = DEVKIT_IF_I2C;
                 (*dev_count)++;
+                current_dev = device_list->device_type;
                 if (*dev_count == MAX_DISCOVER_DEVICES)
                 {
                     break;
@@ -553,7 +572,10 @@ void hal_i2c_discover(device_info_t* device_list, uint8_t* dev_count)
                 device_list++;
             }
         }
-        (void)hal_i2c_idle(i2c_address);
+        if (DEVICE_TYPE_ECC204 != current_dev)
+        {
+            (void)hal_i2c_idle(i2c_address);
+        }
     }
     hal_i2c_deinit();
 }

@@ -43,6 +43,11 @@ cd kitprotocol_parser
 git checkout master
 ```
 
+Release notes for DM320118
+------------------------------------------------------
+ 1.0.3
+  - Added UART interface to host
+
 List of Host Projects
 -----------------------------
 Project Title: cryptoauth_trust_platform (DM320118 as host)

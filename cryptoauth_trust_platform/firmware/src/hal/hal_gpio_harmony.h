@@ -84,10 +84,10 @@
 #define tHIGH_SPEED_DLY     atca_delay_us(1)
 #define tSWIN_DLY           atca_delay_us(1)  //delay to put master strobe within sample window
 
-#define tLOW0_DLY           atca_delay_us(tLOW0_TYPICAL)
-#define tLOW1_DLY           atca_delay_us(tLOW1_TYPICAL)
+#define tLOW0_DLY           atca_delay_us(tLOW0_MIN)
+#define tLOW1_DLY           atca_delay_us(tLOW1_MIN)
 
-#define tBIT_DLY            atca_delay_us(tBIT_TYPICAL)
+#define tBIT_DLY            atca_delay_us(tBIT_MIN)
 #define tRCV0_DLY           atca_delay_us(tBIT_TYPICAL - tLOW0_TYPICAL)
 #define tRCV1_DLY           atca_delay_us(tBIT_TYPICAL - tLOW1_TYPICAL)
 

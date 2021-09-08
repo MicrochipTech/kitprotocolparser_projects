@@ -511,7 +511,7 @@ void hal_swi_discover(device_info_t *device_list, uint8_t* dev_count)
                 if (check_sha_ecc_crc(device_data))
                 {
                     //Process device revision response and mark device presence
-                    memcpy(device_list->dev_rev, &device_data[1], sizeof(device_list->dev_rev));
+                    memcpy(device_list->dev_rev, &device_data[1], 4);
                     device_list->address = dev_pos;
                     device_list->bus_type = DEVKIT_IF_SWI;
                     device_list->device_type = sha_ecc_device_type(device_list->dev_rev);

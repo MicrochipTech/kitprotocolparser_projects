@@ -55,10 +55,15 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 #include "definitions.h"
 #include "app.h"
-#include "usb_hid/usb_hid.h"
 #include <stdio.h>
 #include <string.h>
-
+#if defined(USB_HID_INTERFACE)
+#include "usb_hid/usb_hid.h"
+#elif defined(UART_INTERFACE)
+#include "kit_uart/kit_uart.h"
+#else
+#error Invalid Host, Select host configuration properly
+#endif
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data Definitions
@@ -280,8 +285,6 @@ void APP_Tasks (void )
 {
     /* Check if device is configured.  See if it is configured with correct
      * configuration value  */
-    uint8_t ret_code;
-
     switch(appData.state)
     {
         case APP_STATE_INIT:
@@ -313,9 +316,11 @@ void APP_Tasks (void )
                 appData.hidDataTransmitted = true;
                 appData.state = APP_STATE_MAIN_TASK;
 
+#if defined(USB_HID_INTERFACE)
                 /* Place a new read request. */
                 USB_DEVICE_HID_ReportReceive (USB_DEVICE_HID_INDEX_0,
                         &appData.rxTransferHandle, appData.receiveDataBuffer, 64);
+#endif
             }
             break;
 
@@ -326,6 +331,7 @@ void APP_Tasks (void )
                 /* Device is not configured */
                 appData.state = APP_STATE_WAIT_FOR_CONFIGURATION;
             }
+#if defined(USB_HID_INTERFACE)
             else if( appData.hidDataReceived )
             {
                 /* Look at the data the host sent, to see what
@@ -349,17 +355,15 @@ void APP_Tasks (void )
                 memmove(appData.transmitDataBuffer, &g_usb_buffer[current_response_location], usb_report_length);
 
                 // Transmit device response to host
-                ret_code = USB_DEVICE_HID_ReportSend (USB_DEVICE_HID_INDEX_0,
-                                    &appData.txTransferHandle, appData.transmitDataBuffer, 64);
-
-                if(ret_code == 0x00)
+                if (!(USB_DEVICE_HID_ReportSend (USB_DEVICE_HID_INDEX_0,
+                                    &appData.txTransferHandle, appData.transmitDataBuffer, 64)))
                 {
                     // Update the current response length
                     current_response_location += usb_report_length;
                     response_len -= usb_report_length;
 
                     // Check whether response is more than 64 byte if then do transmit or null the buffer and length
-                    if(response_len <= 0)
+                    if (response_len <= 0)
                     {
                         response_available = false;
 
@@ -376,10 +380,15 @@ void APP_Tasks (void )
                     }
                 }
             }
+#elif defined(UART_INTERFACE)
             else
             {
-
+                if (SERCOM3_USART_ReadCountGet() >= 1)
+                {
+                    read_uart_data();
+                }
             }
+#endif
         case APP_STATE_ERROR:
             break;
         default:

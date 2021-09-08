@@ -48,16 +48,14 @@ void _mon_putc(char c);
 
 int _mon_getc(int canblock)
 {
-   volatile int c = 0;
-   while(SERCOM3_USART_Read((void*)&c, 1) != true);
-   return c;
+    int c = 0;
+    (void)canblock;
+    SERCOM3_USART_Read((uint8_t*)&c, 1);                
+    return c;
 }
 
 void _mon_putc(char c)
 {
-   uint8_t size = 0;
-   do
-   {
-       size = SERCOM3_USART_Write((void*)&c, 1);
-   }while (size != 1);
+    SERCOM3_USART_Write((uint8_t*)&c, 1);
 }
+
