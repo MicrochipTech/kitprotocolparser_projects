@@ -396,13 +396,15 @@ enum kit_protocol_status i2c_interface_talk(uint32_t device_addr, uint8_t* data,
     *tx_length = *tx_length + 1;
     uint32_t execution_or_wait_time = 2;
     uint32_t max_delay_count = 1000;
+    uint16_t data_buf_size = *rx_length;
 
     if ((ret_code = hal_i2c_send(device_addr, data, tx_length)) == KIT_STATUS_SUCCESS)
     {
         atca_delay_ms(5);
-        memset(data, 0, *rx_length);
+        memset(data, 0, data_buf_size);
         do
         {
+            *rx_length = data_buf_size;
             if ((ret_code = hal_i2c_receive(device_addr, data, rx_length)) == KIT_STATUS_SUCCESS)
             {
                 break;

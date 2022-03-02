@@ -110,470 +110,470 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o: ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1.c  .generated_files/flags/USB_HID/9b636f99ab815f8b85853629a5f8d42835a486b3 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o: ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1.c  .generated_files/flags/USB_HID/561fb2f816ca80825b89968819fdec215d0e707f .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/818654064" 
 	@${RM} ${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o.d 
 	@${RM} ${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o.d" -o ${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o: ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1_device.c  .generated_files/flags/USB_HID/302e7be21578598cce137d209c47498852fa48ea .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o: ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1_device.c  .generated_files/flags/USB_HID/2d2ad2d6e3e669cbb25427e96a8ac549f7b25ae6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/818654064" 
 	@${RM} ${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o.d 
 	@${RM} ${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o.d" -o ${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1_device.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1984496892/plib_clock.o: ../src/config/default/peripheral/clock/plib_clock.c  .generated_files/flags/USB_HID/5caf2e12b4f774234c0e190bf093a96524098f3 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1984496892/plib_clock.o: ../src/config/default/peripheral/clock/plib_clock.c  .generated_files/flags/USB_HID/90f146da05bbaa55a25c9d7b72437891eb431c42 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1984496892" 
 	@${RM} ${OBJECTDIR}/_ext/1984496892/plib_clock.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1984496892/plib_clock.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1984496892/plib_clock.o.d" -o ${OBJECTDIR}/_ext/1984496892/plib_clock.o ../src/config/default/peripheral/clock/plib_clock.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1986646378/plib_evsys.o: ../src/config/default/peripheral/evsys/plib_evsys.c  .generated_files/flags/USB_HID/80e5fad32b0d09be25cfa54da843b95e1cea593b .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1986646378/plib_evsys.o: ../src/config/default/peripheral/evsys/plib_evsys.c  .generated_files/flags/USB_HID/79839bce514e2d8f70d563562f8e48301f552767 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1986646378" 
 	@${RM} ${OBJECTDIR}/_ext/1986646378/plib_evsys.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1986646378/plib_evsys.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1986646378/plib_evsys.o.d" -o ${OBJECTDIR}/_ext/1986646378/plib_evsys.o ../src/config/default/peripheral/evsys/plib_evsys.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1865468468/plib_nvic.o: ../src/config/default/peripheral/nvic/plib_nvic.c  .generated_files/flags/USB_HID/1fe092a117649ff31f16b39d26ec11900d1e4553 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1865468468/plib_nvic.o: ../src/config/default/peripheral/nvic/plib_nvic.c  .generated_files/flags/USB_HID/8d2b755baced8fede92edea43e400f4420da2f51 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1865468468" 
 	@${RM} ${OBJECTDIR}/_ext/1865468468/plib_nvic.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1865468468/plib_nvic.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1865468468/plib_nvic.o.d" -o ${OBJECTDIR}/_ext/1865468468/plib_nvic.o ../src/config/default/peripheral/nvic/plib_nvic.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o: ../src/config/default/peripheral/nvmctrl/plib_nvmctrl.c  .generated_files/flags/USB_HID/644334a16ad4b61557c96f807b022fe93d28ced0 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o: ../src/config/default/peripheral/nvmctrl/plib_nvmctrl.c  .generated_files/flags/USB_HID/6c3b33f1a8f2e9f331e7c89edc594cba71912d9c .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1593096446" 
 	@${RM} ${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o.d" -o ${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o ../src/config/default/peripheral/nvmctrl/plib_nvmctrl.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1865521619/plib_port.o: ../src/config/default/peripheral/port/plib_port.c  .generated_files/flags/USB_HID/e426891d85c377d87e99d9fdbbdc35c87a76ba6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1865521619/plib_port.o: ../src/config/default/peripheral/port/plib_port.c  .generated_files/flags/USB_HID/f03e7ecda7bf3a176c043aabf790349a6218c81b .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1865521619" 
 	@${RM} ${OBJECTDIR}/_ext/1865521619/plib_port.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1865521619/plib_port.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1865521619/plib_port.o.d" -o ${OBJECTDIR}/_ext/1865521619/plib_port.o ../src/config/default/peripheral/port/plib_port.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o: ../src/config/default/peripheral/sercom/i2c_master/plib_sercom2_i2c_master.c  .generated_files/flags/USB_HID/1e75a1da89bedecea9ea43ff803537dbff512b19 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o: ../src/config/default/peripheral/sercom/i2c_master/plib_sercom2_i2c_master.c  .generated_files/flags/USB_HID/add41473b22c655989146c406dd176f39144af9a .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/508257091" 
 	@${RM} ${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o.d 
 	@${RM} ${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o.d" -o ${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o ../src/config/default/peripheral/sercom/i2c_master/plib_sercom2_i2c_master.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o: ../src/config/default/peripheral/sercom/spi_master/plib_sercom1_spi_master.c  .generated_files/flags/USB_HID/cf4a9a61ec3fb7dc5d46052635c0dce4c57f36b7 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o: ../src/config/default/peripheral/sercom/spi_master/plib_sercom1_spi_master.c  .generated_files/flags/USB_HID/e9ab8278e0054c25da85a18d0d293bd057f8575c .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/17022449" 
 	@${RM} ${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o.d 
 	@${RM} ${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o.d" -o ${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o ../src/config/default/peripheral/sercom/spi_master/plib_sercom1_spi_master.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o: ../src/config/default/peripheral/sercom/usart/plib_sercom3_usart.c  .generated_files/flags/USB_HID/23572641007a5327330b4546889c7e0426780108 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o: ../src/config/default/peripheral/sercom/usart/plib_sercom3_usart.c  .generated_files/flags/USB_HID/1efa3688e0667a74d5d960d4f1cf2c7ab41dc7a .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/504274921" 
 	@${RM} ${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o.d 
 	@${RM} ${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o.d" -o ${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o ../src/config/default/peripheral/sercom/usart/plib_sercom3_usart.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o: ../src/config/default/peripheral/sercom/usart/plib_sercom0_usart.c  .generated_files/flags/USB_HID/b8f82265ef97d94a97194569416b90c2e5ff22db .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o: ../src/config/default/peripheral/sercom/usart/plib_sercom0_usart.c  .generated_files/flags/USB_HID/5c7cdb40e70845480aea6564abebdb53e73213ce .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/504274921" 
 	@${RM} ${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o.d 
 	@${RM} ${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o.d" -o ${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o ../src/config/default/peripheral/sercom/usart/plib_sercom0_usart.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/163028504/xc32_monitor.o: ../src/config/default/stdio/xc32_monitor.c  .generated_files/flags/USB_HID/fce878d2dfc6de534e5ebd0956cd1b1dd3aa62a0 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/163028504/xc32_monitor.o: ../src/config/default/stdio/xc32_monitor.c  .generated_files/flags/USB_HID/2bbc6e20b98f84ae5ff2065367e0b1b5f17c7c59 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/163028504" 
 	@${RM} ${OBJECTDIR}/_ext/163028504/xc32_monitor.o.d 
 	@${RM} ${OBJECTDIR}/_ext/163028504/xc32_monitor.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/163028504/xc32_monitor.o.d" -o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ../src/config/default/stdio/xc32_monitor.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1881668453/sys_int.o: ../src/config/default/system/int/src/sys_int.c  .generated_files/flags/USB_HID/b615734508b9dcef44d6e63d9048963c0860f6d2 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1881668453/sys_int.o: ../src/config/default/system/int/src/sys_int.c  .generated_files/flags/USB_HID/637ee67ef4d2fab5346e9f76b1d51fe21147d9c1 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1881668453" 
 	@${RM} ${OBJECTDIR}/_ext/1881668453/sys_int.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1881668453/sys_int.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1881668453/sys_int.o.d" -o ${OBJECTDIR}/_ext/1881668453/sys_int.o ../src/config/default/system/int/src/sys_int.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/308758920/usb_device.o: ../src/config/default/usb/src/usb_device.c  .generated_files/flags/USB_HID/4c57fe3959279f824400c05d54f08a8be47e4a23 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/308758920/usb_device.o: ../src/config/default/usb/src/usb_device.c  .generated_files/flags/USB_HID/cf2758cc63dc8ffdceab596a4cacb3e21908faf7 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/308758920" 
 	@${RM} ${OBJECTDIR}/_ext/308758920/usb_device.o.d 
 	@${RM} ${OBJECTDIR}/_ext/308758920/usb_device.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/308758920/usb_device.o.d" -o ${OBJECTDIR}/_ext/308758920/usb_device.o ../src/config/default/usb/src/usb_device.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/308758920/usb_device_hid.o: ../src/config/default/usb/src/usb_device_hid.c  .generated_files/flags/USB_HID/afb1b5cfbc5efa509edb82ac5c4f9b79b27f6bfc .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/308758920/usb_device_hid.o: ../src/config/default/usb/src/usb_device_hid.c  .generated_files/flags/USB_HID/93d7dd631b2780ef8d8dcd45ea97a27a6ecc918 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/308758920" 
 	@${RM} ${OBJECTDIR}/_ext/308758920/usb_device_hid.o.d 
 	@${RM} ${OBJECTDIR}/_ext/308758920/usb_device_hid.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/308758920/usb_device_hid.o.d" -o ${OBJECTDIR}/_ext/308758920/usb_device_hid.o ../src/config/default/usb/src/usb_device_hid.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/initialization.o: ../src/config/default/initialization.c  .generated_files/flags/USB_HID/aec1744a5f262b9d3fa29b9f70e43dabdc6bb86f .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/initialization.o: ../src/config/default/initialization.c  .generated_files/flags/USB_HID/1795e031d277b199a4be4581b43d8baab3d92b6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/initialization.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/initialization.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/initialization.o.d" -o ${OBJECTDIR}/_ext/1171490990/initialization.o ../src/config/default/initialization.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/interrupts.o: ../src/config/default/interrupts.c  .generated_files/flags/USB_HID/6e1204ea6335ed7eed8614e52acddcff76e7f168 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/interrupts.o: ../src/config/default/interrupts.c  .generated_files/flags/USB_HID/57b95b7843f2cd454e714b7022b814172bc56f94 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/interrupts.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/interrupts.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/interrupts.o.d" -o ${OBJECTDIR}/_ext/1171490990/interrupts.o ../src/config/default/interrupts.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/exceptions.o: ../src/config/default/exceptions.c  .generated_files/flags/USB_HID/4c6c200719ca9dea2888ef86d4ccf68492c38a75 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/exceptions.o: ../src/config/default/exceptions.c  .generated_files/flags/USB_HID/4011d0506289b124d156eb284a494e53d80fe6d6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/exceptions.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/exceptions.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/exceptions.o.d" -o ${OBJECTDIR}/_ext/1171490990/exceptions.o ../src/config/default/exceptions.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/startup_xc32.o: ../src/config/default/startup_xc32.c  .generated_files/flags/USB_HID/6975aa2505bf4cfd0c4f056a46b6167ff17022da .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/startup_xc32.o: ../src/config/default/startup_xc32.c  .generated_files/flags/USB_HID/99b63e861bc62faec6a65dd0e096c0d949757f1c .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/startup_xc32.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/startup_xc32.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/startup_xc32.o.d" -o ${OBJECTDIR}/_ext/1171490990/startup_xc32.o ../src/config/default/startup_xc32.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/libc_syscalls.o: ../src/config/default/libc_syscalls.c  .generated_files/flags/USB_HID/584cc1456b71474dec1ff078e5ef0fe4b0ad99f5 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/libc_syscalls.o: ../src/config/default/libc_syscalls.c  .generated_files/flags/USB_HID/6b7397ec10c4da00ed8861dfc0a7708ba3229ac9 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/libc_syscalls.o.d" -o ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o ../src/config/default/libc_syscalls.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o: ../src/config/default/usb_device_init_data.c  .generated_files/flags/USB_HID/3962cb990069798ea4ac0d73ea5df2819ef80a40 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o: ../src/config/default/usb_device_init_data.c  .generated_files/flags/USB_HID/e3f6393a534382f1743cbbe0aa11a743b0ac67e5 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o.d" -o ${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o ../src/config/default/usb_device_init_data.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/tasks.o: ../src/config/default/tasks.c  .generated_files/flags/USB_HID/fcc0d61b7bd3a6d97a32bb115b1a03f19a103157 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/tasks.o: ../src/config/default/tasks.c  .generated_files/flags/USB_HID/f52f189c81be9a6f957111a403a0c10aee5081e4 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/tasks.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/tasks.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/tasks.o.d" -o ${OBJECTDIR}/_ext/1171490990/tasks.o ../src/config/default/tasks.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o: ../src/hal/hal_core_m0plus_base.c  .generated_files/flags/USB_HID/5a760f3fdad5ce132648ad6a6460b4221d8601dd .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o: ../src/hal/hal_core_m0plus_base.c  .generated_files/flags/USB_HID/bfaa616fae3c8a6aac1f436bda62cc432252a7b .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o ../src/hal/hal_core_m0plus_base.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_delay.o: ../src/hal/hal_delay.c  .generated_files/flags/USB_HID/b1b39ad3dbf6813497ad43ad0cd1ba0c35684b7b .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_delay.o: ../src/hal/hal_delay.c  .generated_files/flags/USB_HID/cafa5a3562be7e771e7f1199ed51457c0e304f66 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_delay.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_delay.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_delay.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_delay.o ../src/hal/hal_delay.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o: ../src/hal/hal_i2c_harmony.c  .generated_files/flags/USB_HID/6c08a169b73dcfdaec2e24a3da7a9ec15f7ddd20 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o: ../src/hal/hal_i2c_harmony.c  .generated_files/flags/USB_HID/53d240257a3a00113e0201ab148bb04bc7427b40 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o ../src/hal/hal_i2c_harmony.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o: ../src/hal/hal_spi_harmony.c  .generated_files/flags/USB_HID/480636e0e6f455c7937b4e5bf0fd760cabb7462f .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o: ../src/hal/hal_spi_harmony.c  .generated_files/flags/USB_HID/5f035de0f84708707c05024f2fdbac69b075d2f9 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o ../src/hal/hal_spi_harmony.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o: ../src/hal/hal_swi_uart_harmony.c  .generated_files/flags/USB_HID/184f9f34bc92f713716f7f97a6f28de20b8a0943 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o: ../src/hal/hal_swi_uart_harmony.c  .generated_files/flags/USB_HID/3358d3393decf922c9c01343b96164c0ad51ffd5 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o ../src/hal/hal_swi_uart_harmony.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o: ../src/hal/hal_gpio_harmony.c  .generated_files/flags/USB_HID/c5a7206df3a146ac205e65978d0a30b00e5fef62 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o: ../src/hal/hal_gpio_harmony.c  .generated_files/flags/USB_HID/88b7775af5a8529f371e100304478f0e3eed055c .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o ../src/hal/hal_gpio_harmony.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_init.c  .generated_files/flags/USB_HID/6caf4e73458294df6a505aa7200d49b725cd2abb .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_init.c  .generated_files/flags/USB_HID/69665af78606167f3fb145f65bf38ba6520c9eed .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1209376559" 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o.d" -o ${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o ../../../kitprotocol_parser/kit_protocol/kit_protocol_init.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_interpreter.c  .generated_files/flags/USB_HID/605105da03225dea290ed81df6107ebb95796eb4 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_interpreter.c  .generated_files/flags/USB_HID/fbf94437203c51ad76a0b8c979b15acf0847bb74 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1209376559" 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o.d" -o ${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o ../../../kitprotocol_parser/kit_protocol/kit_protocol_interpreter.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_status.c  .generated_files/flags/USB_HID/adf3b7e81f1e89c802bd06a5e156e5ac16711d6c .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_status.c  .generated_files/flags/USB_HID/ae1bd43091504cb9a4aad79838837e5562f435d0 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1209376559" 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o.d" -o ${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o ../../../kitprotocol_parser/kit_protocol/kit_protocol_status.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_utilities.c  .generated_files/flags/USB_HID/847b2a8ad6c1ba0aa4a86046a7bddfa7520f9160 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_utilities.c  .generated_files/flags/USB_HID/3b000b73d3a0f8ccc4ee8ebb0721c61b9e4d7f31 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1209376559" 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o.d" -o ${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o ../../../kitprotocol_parser/kit_protocol/kit_protocol_utilities.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1477374047/crc_engines.o: ../../../kitprotocol_parser/utilities/crc/crc_engines.c  .generated_files/flags/USB_HID/637a0bc4ea586d36ecddf56ef3348cc424617281 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1477374047/crc_engines.o: ../../../kitprotocol_parser/utilities/crc/crc_engines.c  .generated_files/flags/USB_HID/3bf61218ef1b95f7ff675c63cdb8f89b98e8572a .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1477374047" 
 	@${RM} ${OBJECTDIR}/_ext/1477374047/crc_engines.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1477374047/crc_engines.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1477374047/crc_engines.o.d" -o ${OBJECTDIR}/_ext/1477374047/crc_engines.o ../../../kitprotocol_parser/utilities/crc/crc_engines.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1506226913/kit_device_info.o: ../../../kitprotocol_parser/kit_device_info.c  .generated_files/flags/USB_HID/e9415226dd2d83e6223be42e62b31d12f03d3bce .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1506226913/kit_device_info.o: ../../../kitprotocol_parser/kit_device_info.c  .generated_files/flags/USB_HID/a6407127fb85a4f86cd2a233022a3c3dd799a83c .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1506226913" 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_device_info.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_device_info.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1506226913/kit_device_info.o.d" -o ${OBJECTDIR}/_ext/1506226913/kit_device_info.o ../../../kitprotocol_parser/kit_device_info.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o: ../../../kitprotocol_parser/kit_hal_interface.c  .generated_files/flags/USB_HID/beba863f0f59d8388eb583b2ca9a4b588ad32221 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o: ../../../kitprotocol_parser/kit_hal_interface.c  .generated_files/flags/USB_HID/50b614cac56015005979f29a164f72f718d2c290 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1506226913" 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o.d" -o ${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o ../../../kitprotocol_parser/kit_hal_interface.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1506226913/kit_host_interface.o: ../../../kitprotocol_parser/kit_host_interface.c  .generated_files/flags/USB_HID/be6e17777af26e2733230eedef8e5c2837f9a6f6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1506226913/kit_host_interface.o: ../../../kitprotocol_parser/kit_host_interface.c  .generated_files/flags/USB_HID/4ca2ccf8b1bf90d9bc23d10cbcca6657e32bda61 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1506226913" 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_host_interface.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_host_interface.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1506226913/kit_host_interface.o.d" -o ${OBJECTDIR}/_ext/1506226913/kit_host_interface.o ../../../kitprotocol_parser/kit_host_interface.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/431374514/usb_hid.o: ../src/usb_hid/usb_hid.c  .generated_files/flags/USB_HID/766c64794c96d8917ea170ae9da13c09c1bc0f75 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/431374514/usb_hid.o: ../src/usb_hid/usb_hid.c  .generated_files/flags/USB_HID/58a944fa98aebd3b4c774a319e88145d70fbdc0d .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/431374514" 
 	@${RM} ${OBJECTDIR}/_ext/431374514/usb_hid.o.d 
 	@${RM} ${OBJECTDIR}/_ext/431374514/usb_hid.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/431374514/usb_hid.o.d" -o ${OBJECTDIR}/_ext/431374514/usb_hid.o ../src/usb_hid/usb_hid.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/USB_HID/3b070f8679d558e3c9386fbffc77f22f4862cd8e .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/USB_HID/d22e60ac929354d5290a41309a31dcb8bd4118f3 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/flags/USB_HID/c9929234d54d24662eefbb978d2b82a4c7beae8d .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/flags/USB_HID/cdc40997d44814c1afadca8d9ff73081e0f8215 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/app.o.d" -o ${OBJECTDIR}/_ext/1360937237/app.o ../src/app.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
 else
-${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o: ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1.c  .generated_files/flags/USB_HID/967650d55b9d948d1e030fd3da89fe77367b5e7a .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o: ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1.c  .generated_files/flags/USB_HID/f4e35b3f7b0987abef942704c04972bde7da4f65 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/818654064" 
 	@${RM} ${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o.d 
 	@${RM} ${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o.d" -o ${OBJECTDIR}/_ext/818654064/drv_usbfsv1.o ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o: ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1_device.c  .generated_files/flags/USB_HID/e591a606b210274e0f00455b96f622d8fc2fdec2 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o: ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1_device.c  .generated_files/flags/USB_HID/b63106defc067bd9735cbd07e99ba5b8cc343507 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/818654064" 
 	@${RM} ${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o.d 
 	@${RM} ${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o.d" -o ${OBJECTDIR}/_ext/818654064/drv_usbfsv1_device.o ../src/config/default/driver/usb/usbfsv1/src/drv_usbfsv1_device.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1984496892/plib_clock.o: ../src/config/default/peripheral/clock/plib_clock.c  .generated_files/flags/USB_HID/2181514293f60d285ac610ff703657c53ab10a82 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1984496892/plib_clock.o: ../src/config/default/peripheral/clock/plib_clock.c  .generated_files/flags/USB_HID/296951241dcec6d41973115116533a9cd06f4f5f .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1984496892" 
 	@${RM} ${OBJECTDIR}/_ext/1984496892/plib_clock.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1984496892/plib_clock.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1984496892/plib_clock.o.d" -o ${OBJECTDIR}/_ext/1984496892/plib_clock.o ../src/config/default/peripheral/clock/plib_clock.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1986646378/plib_evsys.o: ../src/config/default/peripheral/evsys/plib_evsys.c  .generated_files/flags/USB_HID/3347c211d166907a1a8ef429ae93bd4b1bec2e57 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1986646378/plib_evsys.o: ../src/config/default/peripheral/evsys/plib_evsys.c  .generated_files/flags/USB_HID/2f0c561b27600358e7ac787395efea0092f28d6b .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1986646378" 
 	@${RM} ${OBJECTDIR}/_ext/1986646378/plib_evsys.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1986646378/plib_evsys.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1986646378/plib_evsys.o.d" -o ${OBJECTDIR}/_ext/1986646378/plib_evsys.o ../src/config/default/peripheral/evsys/plib_evsys.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1865468468/plib_nvic.o: ../src/config/default/peripheral/nvic/plib_nvic.c  .generated_files/flags/USB_HID/74b94e9d153da205bd6494ac817c3b38f876cab3 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1865468468/plib_nvic.o: ../src/config/default/peripheral/nvic/plib_nvic.c  .generated_files/flags/USB_HID/9711890d780aa0b4324a47b0b379f0d9c6d473ee .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1865468468" 
 	@${RM} ${OBJECTDIR}/_ext/1865468468/plib_nvic.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1865468468/plib_nvic.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1865468468/plib_nvic.o.d" -o ${OBJECTDIR}/_ext/1865468468/plib_nvic.o ../src/config/default/peripheral/nvic/plib_nvic.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o: ../src/config/default/peripheral/nvmctrl/plib_nvmctrl.c  .generated_files/flags/USB_HID/3c9fc5232d625cfa7ab473b4ffdb8c81498b5ce0 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o: ../src/config/default/peripheral/nvmctrl/plib_nvmctrl.c  .generated_files/flags/USB_HID/44f9ec04906e20999894c139601b25d4ec5a756f .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1593096446" 
 	@${RM} ${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o.d" -o ${OBJECTDIR}/_ext/1593096446/plib_nvmctrl.o ../src/config/default/peripheral/nvmctrl/plib_nvmctrl.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1865521619/plib_port.o: ../src/config/default/peripheral/port/plib_port.c  .generated_files/flags/USB_HID/d0dcc7456a6da58bdaac0248c50a7e8e4530203a .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1865521619/plib_port.o: ../src/config/default/peripheral/port/plib_port.c  .generated_files/flags/USB_HID/b9249fe155f023d11133072a96f38217c12c4b09 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1865521619" 
 	@${RM} ${OBJECTDIR}/_ext/1865521619/plib_port.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1865521619/plib_port.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1865521619/plib_port.o.d" -o ${OBJECTDIR}/_ext/1865521619/plib_port.o ../src/config/default/peripheral/port/plib_port.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o: ../src/config/default/peripheral/sercom/i2c_master/plib_sercom2_i2c_master.c  .generated_files/flags/USB_HID/3f44b4d73685d88a2afe09567f227e1e99618288 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o: ../src/config/default/peripheral/sercom/i2c_master/plib_sercom2_i2c_master.c  .generated_files/flags/USB_HID/26e2fcb4463daa136a4f6e45bfc9c10dc8142f61 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/508257091" 
 	@${RM} ${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o.d 
 	@${RM} ${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o.d" -o ${OBJECTDIR}/_ext/508257091/plib_sercom2_i2c_master.o ../src/config/default/peripheral/sercom/i2c_master/plib_sercom2_i2c_master.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o: ../src/config/default/peripheral/sercom/spi_master/plib_sercom1_spi_master.c  .generated_files/flags/USB_HID/72d25a536776c3a9387777c84605a32da02a692a .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o: ../src/config/default/peripheral/sercom/spi_master/plib_sercom1_spi_master.c  .generated_files/flags/USB_HID/4710319de1fd1b7ffe73ce3015e18b6546240220 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/17022449" 
 	@${RM} ${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o.d 
 	@${RM} ${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o.d" -o ${OBJECTDIR}/_ext/17022449/plib_sercom1_spi_master.o ../src/config/default/peripheral/sercom/spi_master/plib_sercom1_spi_master.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o: ../src/config/default/peripheral/sercom/usart/plib_sercom3_usart.c  .generated_files/flags/USB_HID/d3e90426d76aabd11163219d9b67a072592c723b .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o: ../src/config/default/peripheral/sercom/usart/plib_sercom3_usart.c  .generated_files/flags/USB_HID/3e5556d7ff3325b6bbd4aec57be0aed1dfa2cb89 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/504274921" 
 	@${RM} ${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o.d 
 	@${RM} ${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o.d" -o ${OBJECTDIR}/_ext/504274921/plib_sercom3_usart.o ../src/config/default/peripheral/sercom/usart/plib_sercom3_usart.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o: ../src/config/default/peripheral/sercom/usart/plib_sercom0_usart.c  .generated_files/flags/USB_HID/e1ad06aaffa46068e750b847c4a92b499c20ef1d .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o: ../src/config/default/peripheral/sercom/usart/plib_sercom0_usart.c  .generated_files/flags/USB_HID/fe8871b87df08212174dee8dc8479cda9e762ae .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/504274921" 
 	@${RM} ${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o.d 
 	@${RM} ${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o.d" -o ${OBJECTDIR}/_ext/504274921/plib_sercom0_usart.o ../src/config/default/peripheral/sercom/usart/plib_sercom0_usart.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/163028504/xc32_monitor.o: ../src/config/default/stdio/xc32_monitor.c  .generated_files/flags/USB_HID/c3e8d3a84460764eae97acb75e3aee51707d11d5 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/163028504/xc32_monitor.o: ../src/config/default/stdio/xc32_monitor.c  .generated_files/flags/USB_HID/8a1a0887e19f5f16663987763d252cb6f6c2af2 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/163028504" 
 	@${RM} ${OBJECTDIR}/_ext/163028504/xc32_monitor.o.d 
 	@${RM} ${OBJECTDIR}/_ext/163028504/xc32_monitor.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/163028504/xc32_monitor.o.d" -o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ../src/config/default/stdio/xc32_monitor.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1881668453/sys_int.o: ../src/config/default/system/int/src/sys_int.c  .generated_files/flags/USB_HID/5fe98589b2438b24a84bf8c2d73d352656a96937 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1881668453/sys_int.o: ../src/config/default/system/int/src/sys_int.c  .generated_files/flags/USB_HID/ee3cd5fcff61c6fe758ac216a448dd675ddd2906 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1881668453" 
 	@${RM} ${OBJECTDIR}/_ext/1881668453/sys_int.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1881668453/sys_int.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1881668453/sys_int.o.d" -o ${OBJECTDIR}/_ext/1881668453/sys_int.o ../src/config/default/system/int/src/sys_int.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/308758920/usb_device.o: ../src/config/default/usb/src/usb_device.c  .generated_files/flags/USB_HID/ea7f6ff9a39c42b63523c89aea4c54f25ff1e5 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/308758920/usb_device.o: ../src/config/default/usb/src/usb_device.c  .generated_files/flags/USB_HID/cbfe904d4b56019989ccf44400b344dfb8792785 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/308758920" 
 	@${RM} ${OBJECTDIR}/_ext/308758920/usb_device.o.d 
 	@${RM} ${OBJECTDIR}/_ext/308758920/usb_device.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/308758920/usb_device.o.d" -o ${OBJECTDIR}/_ext/308758920/usb_device.o ../src/config/default/usb/src/usb_device.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/308758920/usb_device_hid.o: ../src/config/default/usb/src/usb_device_hid.c  .generated_files/flags/USB_HID/1ca24d6a5b2b6fe9a0ef6857a5501e12e8dac53b .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/308758920/usb_device_hid.o: ../src/config/default/usb/src/usb_device_hid.c  .generated_files/flags/USB_HID/233b934835499b1cfbfbd976eb18701ef0a3a081 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/308758920" 
 	@${RM} ${OBJECTDIR}/_ext/308758920/usb_device_hid.o.d 
 	@${RM} ${OBJECTDIR}/_ext/308758920/usb_device_hid.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/308758920/usb_device_hid.o.d" -o ${OBJECTDIR}/_ext/308758920/usb_device_hid.o ../src/config/default/usb/src/usb_device_hid.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/initialization.o: ../src/config/default/initialization.c  .generated_files/flags/USB_HID/34ecc3f06396fabf071ff2b0b53e9461b86f4aa6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/initialization.o: ../src/config/default/initialization.c  .generated_files/flags/USB_HID/87c98201c5c16db43dfe9b9e68db8f1eddb2c636 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/initialization.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/initialization.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/initialization.o.d" -o ${OBJECTDIR}/_ext/1171490990/initialization.o ../src/config/default/initialization.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/interrupts.o: ../src/config/default/interrupts.c  .generated_files/flags/USB_HID/a561982e6c7eb6c9813261c48426afd033767bc7 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/interrupts.o: ../src/config/default/interrupts.c  .generated_files/flags/USB_HID/7615423c66d8c8be6c657bd8c583650d07a759b1 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/interrupts.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/interrupts.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/interrupts.o.d" -o ${OBJECTDIR}/_ext/1171490990/interrupts.o ../src/config/default/interrupts.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/exceptions.o: ../src/config/default/exceptions.c  .generated_files/flags/USB_HID/4053f9b9ab7b3b16ce90a1440d8aa86c96c35bc7 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/exceptions.o: ../src/config/default/exceptions.c  .generated_files/flags/USB_HID/351dd094b96df1c21164213f86bfcfeedc05edf0 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/exceptions.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/exceptions.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/exceptions.o.d" -o ${OBJECTDIR}/_ext/1171490990/exceptions.o ../src/config/default/exceptions.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/startup_xc32.o: ../src/config/default/startup_xc32.c  .generated_files/flags/USB_HID/6210a3609107623574cd1d126f0504760b83acc6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/startup_xc32.o: ../src/config/default/startup_xc32.c  .generated_files/flags/USB_HID/565e2e9592d3146b88e6e9acd7d8c87321557271 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/startup_xc32.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/startup_xc32.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/startup_xc32.o.d" -o ${OBJECTDIR}/_ext/1171490990/startup_xc32.o ../src/config/default/startup_xc32.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/libc_syscalls.o: ../src/config/default/libc_syscalls.c  .generated_files/flags/USB_HID/a655611c0757979e9538445689387f231f1107c1 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/libc_syscalls.o: ../src/config/default/libc_syscalls.c  .generated_files/flags/USB_HID/1571d2482a99a65bd3147ee7cc2354d29b72af0a .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/libc_syscalls.o.d" -o ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o ../src/config/default/libc_syscalls.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o: ../src/config/default/usb_device_init_data.c  .generated_files/flags/USB_HID/267043f181fe294063c940e8f5cae2d0e88f24ff .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o: ../src/config/default/usb_device_init_data.c  .generated_files/flags/USB_HID/44b96e944b0ff5e6b1f2494c7e36bc590e710da1 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o.d" -o ${OBJECTDIR}/_ext/1171490990/usb_device_init_data.o ../src/config/default/usb_device_init_data.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1171490990/tasks.o: ../src/config/default/tasks.c  .generated_files/flags/USB_HID/121276bff369868f8df389dc854297f41585572b .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1171490990/tasks.o: ../src/config/default/tasks.c  .generated_files/flags/USB_HID/3ee715a6ebaff4c76a5c2b3eed091d32bb30ba8e .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1171490990" 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/tasks.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1171490990/tasks.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1171490990/tasks.o.d" -o ${OBJECTDIR}/_ext/1171490990/tasks.o ../src/config/default/tasks.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o: ../src/hal/hal_core_m0plus_base.c  .generated_files/flags/USB_HID/54e8fb546cd71574c33ef1ca2d09ea39445855a9 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o: ../src/hal/hal_core_m0plus_base.c  .generated_files/flags/USB_HID/326379738fbdc5ddb8f72ebda408c4780984dd86 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_core_m0plus_base.o ../src/hal/hal_core_m0plus_base.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_delay.o: ../src/hal/hal_delay.c  .generated_files/flags/USB_HID/709ea4ec323bf376ee24931db2b986c0bdff4cd .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_delay.o: ../src/hal/hal_delay.c  .generated_files/flags/USB_HID/b298054f53bbcf5b51baac5888c1e43630401295 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_delay.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_delay.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_delay.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_delay.o ../src/hal/hal_delay.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o: ../src/hal/hal_i2c_harmony.c  .generated_files/flags/USB_HID/b5a929eef935e3ecbf8ee25456d8088070779329 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o: ../src/hal/hal_i2c_harmony.c  .generated_files/flags/USB_HID/7281ed29725fd609e15e3fa614387858dec42dd8 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_i2c_harmony.o ../src/hal/hal_i2c_harmony.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o: ../src/hal/hal_spi_harmony.c  .generated_files/flags/USB_HID/47873758a696b7cbbfe71ca92688f0a9d1d7ac9f .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o: ../src/hal/hal_spi_harmony.c  .generated_files/flags/USB_HID/943848335bbf8d78b7e8fc9a725ce2020b01e27 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_spi_harmony.o ../src/hal/hal_spi_harmony.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o: ../src/hal/hal_swi_uart_harmony.c  .generated_files/flags/USB_HID/993670f549f2e2efc9967016320aec5ef1a6c16e .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o: ../src/hal/hal_swi_uart_harmony.c  .generated_files/flags/USB_HID/d4c6e1608be19b3b7be00de10d342cc36d547447 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_swi_uart_harmony.o ../src/hal/hal_swi_uart_harmony.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o: ../src/hal/hal_gpio_harmony.c  .generated_files/flags/USB_HID/4d96d5d23a7e94fc24a76de35da2521af3401170 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o: ../src/hal/hal_gpio_harmony.c  .generated_files/flags/USB_HID/8ae364e9e3c428f32044b014f4a74494dbe12599 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/659857049" 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o.d 
 	@${RM} ${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o.d" -o ${OBJECTDIR}/_ext/659857049/hal_gpio_harmony.o ../src/hal/hal_gpio_harmony.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_init.c  .generated_files/flags/USB_HID/572bad5a14f84dd3802e4ba1b79fba0df0276402 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_init.c  .generated_files/flags/USB_HID/914a5a78393ce7f0dcca45659e380be810596572 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1209376559" 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o.d" -o ${OBJECTDIR}/_ext/1209376559/kit_protocol_init.o ../../../kitprotocol_parser/kit_protocol/kit_protocol_init.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_interpreter.c  .generated_files/flags/USB_HID/5cbdd94c9c922745ef83a50ea748f489c23da662 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_interpreter.c  .generated_files/flags/USB_HID/5fdd57c303c1d670d9563792f178d054a4054611 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1209376559" 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o.d" -o ${OBJECTDIR}/_ext/1209376559/kit_protocol_interpreter.o ../../../kitprotocol_parser/kit_protocol/kit_protocol_interpreter.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_status.c  .generated_files/flags/USB_HID/435b0260bd8e707ceeacb5a206411ac0b81eaefb .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_status.c  .generated_files/flags/USB_HID/2e5e6ad64ba8c3f1a9835e4801106898d017551e .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1209376559" 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o.d" -o ${OBJECTDIR}/_ext/1209376559/kit_protocol_status.o ../../../kitprotocol_parser/kit_protocol/kit_protocol_status.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_utilities.c  .generated_files/flags/USB_HID/99c7bacb1611eb0ca4216903e2a905196a0516d6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o: ../../../kitprotocol_parser/kit_protocol/kit_protocol_utilities.c  .generated_files/flags/USB_HID/bcd1861bafeb1f801c4fbffc2ac78946cd208df4 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1209376559" 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o.d" -o ${OBJECTDIR}/_ext/1209376559/kit_protocol_utilities.o ../../../kitprotocol_parser/kit_protocol/kit_protocol_utilities.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1477374047/crc_engines.o: ../../../kitprotocol_parser/utilities/crc/crc_engines.c  .generated_files/flags/USB_HID/1e7bb856f221fe8492916878c47f932ede252b44 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1477374047/crc_engines.o: ../../../kitprotocol_parser/utilities/crc/crc_engines.c  .generated_files/flags/USB_HID/65b3193f6c183f74c607ef4588b60a0d07cab894 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1477374047" 
 	@${RM} ${OBJECTDIR}/_ext/1477374047/crc_engines.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1477374047/crc_engines.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1477374047/crc_engines.o.d" -o ${OBJECTDIR}/_ext/1477374047/crc_engines.o ../../../kitprotocol_parser/utilities/crc/crc_engines.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1506226913/kit_device_info.o: ../../../kitprotocol_parser/kit_device_info.c  .generated_files/flags/USB_HID/3735dbb19e74ba2cf8ed0943f9dffbdbb9c94fba .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1506226913/kit_device_info.o: ../../../kitprotocol_parser/kit_device_info.c  .generated_files/flags/USB_HID/c5e38cf3fed3bded55fba65bd5ec3edcbcc7d8d0 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1506226913" 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_device_info.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_device_info.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1506226913/kit_device_info.o.d" -o ${OBJECTDIR}/_ext/1506226913/kit_device_info.o ../../../kitprotocol_parser/kit_device_info.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o: ../../../kitprotocol_parser/kit_hal_interface.c  .generated_files/flags/USB_HID/be550aa32154538375578c8612c14fb1c7a370e6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o: ../../../kitprotocol_parser/kit_hal_interface.c  .generated_files/flags/USB_HID/f7fa01dba9562a5097b93ed76003c37753da6fe3 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1506226913" 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o.d" -o ${OBJECTDIR}/_ext/1506226913/kit_hal_interface.o ../../../kitprotocol_parser/kit_hal_interface.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1506226913/kit_host_interface.o: ../../../kitprotocol_parser/kit_host_interface.c  .generated_files/flags/USB_HID/82feb212192ea5550c9eec1b9fa4f552cb98c0ea .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1506226913/kit_host_interface.o: ../../../kitprotocol_parser/kit_host_interface.c  .generated_files/flags/USB_HID/2e2109c9f95001c4ffca5a08eb5c0c099616d742 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1506226913" 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_host_interface.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1506226913/kit_host_interface.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1506226913/kit_host_interface.o.d" -o ${OBJECTDIR}/_ext/1506226913/kit_host_interface.o ../../../kitprotocol_parser/kit_host_interface.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/431374514/usb_hid.o: ../src/usb_hid/usb_hid.c  .generated_files/flags/USB_HID/6005943a5d49e93531af475be6fb924b3a2f13db .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/431374514/usb_hid.o: ../src/usb_hid/usb_hid.c  .generated_files/flags/USB_HID/a28945c954f94bc98457f2a86262837a8d46abe6 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/431374514" 
 	@${RM} ${OBJECTDIR}/_ext/431374514/usb_hid.o.d 
 	@${RM} ${OBJECTDIR}/_ext/431374514/usb_hid.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/431374514/usb_hid.o.d" -o ${OBJECTDIR}/_ext/431374514/usb_hid.o ../src/usb_hid/usb_hid.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/USB_HID/6055fec4a5b93e78c1cd9a809cb3be5885b65d06 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/USB_HID/94a34e021478dcfe4af3aba9158e0eb8caf47d99 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -DUSB_HID_INTERFACE -I"../../../kitprotocol_parser" -I"../src" -I"../src/config/default" -I"../src/hal" -I"../src/packs/ATSAMD21E18A_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -I"../src/usb_hid" -Werror -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_USB_HID=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samd21a" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/flags/USB_HID/d63e1ad9d46a7d7d947c9d7611e95366b3d11172 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
+${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/flags/USB_HID/af328238acd9ebdccdd0265baf5c520f41badee1 .generated_files/flags/USB_HID/788970b4be7b0e22249f785bb2309922c278d1b3
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o 
@@ -613,3 +613,11 @@ endif
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r build/USB_HID
 	${RM} -r dist/USB_HID
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+DEPFILES=$(shell mplabwildcard ${POSSIBLE_DEPFILES})
+ifneq (${DEPFILES},)
+include ${DEPFILES}
+endif

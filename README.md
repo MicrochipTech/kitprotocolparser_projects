@@ -45,6 +45,9 @@ git checkout master
 
 Release notes for DM320118
 ------------------------------------------------------
+ 1.0.4
+  - Discovery issue for CryptoAUTH-XPRO boards are fixed 
+
  1.0.3
   - Added UART interface to host
 
