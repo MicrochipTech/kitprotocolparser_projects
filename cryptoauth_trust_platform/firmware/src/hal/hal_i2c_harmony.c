@@ -107,7 +107,7 @@ enum kit_protocol_status hal_i2c_wake(uint32_t device_addr)
 
     while (SERCOM2_I2C_IsBusy() == true);
 
-    if (g_selected_device_type != DEVICE_TYPE_ECC204)
+    if ((g_selected_device_type != DEVICE_TYPE_ECC204) && (g_selected_device_type != DEVICE_TYPE_TA010) && (g_selected_device_type != DEVICE_TYPE_SHA104) && (g_selected_device_type != DEVICE_TYPE_SHA105) && (g_selected_device_type != DEVICE_TYPE_SHA106) && (g_selected_device_type != DEVICE_TYPE_RNG90) && (g_selected_device_type != DEVICE_TYPE_ECC206))
     {
         // Send the 00 address as the wake pulse; part will NACK, so don't check for status
         SERCOM2_I2C_Write(0x00, (uint8_t*)&data[0], 1);
@@ -574,7 +574,7 @@ void hal_i2c_discover(device_info_t* device_list, uint8_t* dev_count)
                 device_list++;
             }
         }
-        if (DEVICE_TYPE_ECC204 != current_dev)
+        if ((DEVICE_TYPE_ECC204 != current_dev) && (DEVICE_TYPE_TA010 != current_dev) && (DEVICE_TYPE_SHA104 != current_dev) && (DEVICE_TYPE_SHA105 != current_dev) && (DEVICE_TYPE_SHA106 != current_dev) && (DEVICE_TYPE_RNG90 != current_dev) && (DEVICE_TYPE_ECC206 != current_dev))
         {
             (void)hal_i2c_idle(i2c_address);
         }

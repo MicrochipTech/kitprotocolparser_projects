@@ -142,7 +142,7 @@ enum kit_protocol_status hal_spi_send(uint32_t device_addr, uint8_t *txdata, uin
 enum kit_protocol_status hal_spi_receive(uint32_t device_addr, uint8_t *rxdata, uint16_t *rxlength)
 {
     enum kit_protocol_status status = KIT_STATUS_COMM_FAIL;
-    uint16_t rxdata_max_size = 1024;
+    uint16_t rxdata_max_size = CMD_MAX_RSP_SIZE;
     uint16_t word_addr_size = 1;
     uint16_t read_length = 2;
     uint8_t word_address;
@@ -159,6 +159,7 @@ enum kit_protocol_status hal_spi_receive(uint32_t device_addr, uint8_t *rxdata, 
     {
 
         word_address = rxdata[0];
+        /*rxdata_max_size should be updated based on the rxdata received from cal*/
         rxdata_max_size = ((uint16_t)rxdata[1] * 256) + rxdata[2];
 
         /*Set read length.. Check for register reads or 1 byte reads*/
@@ -174,60 +175,74 @@ enum kit_protocol_status hal_spi_receive(uint32_t device_addr, uint8_t *rxdata, 
         if (true == SERCOM1_SPI_Write(&word_address, word_addr_size))
         {
             /* Wait for the SPI transfer to complete */
-            status = check_spi_busy(1000000, sizeof(word_address));
-
+            status = check_spi_busy(1000000, sizeof(word_address)); 
+            
         }
         if (KIT_STATUS_SUCCESS != status)
         {
             break;
         }
-
-        /* read status register/length bytes to know number of bytes to read */
+	
         status = KIT_STATUS_RX_FAIL;
-        if (true == SERCOM1_SPI_Read(rxdata, read_length))
+        if ((FAST_CRYPTO_RD_FAST_FIRST == word_address) || (FAST_CRYPTO_RD_FAST_ADDL == word_address))
         {
-            /* Wait for the SPI transfer to complete */
-            status = check_spi_busy(1000000, read_length);
-
+            /*read_length should be set based on the algorithm selected for fce operations*/
+            read_length = rxdata_max_size;
+            if (true == SERCOM1_SPI_Read(rxdata, read_length))
+            {
+                /* Wait for the SPI transfer to complete */
+                status = check_spi_busy(1000000, read_length);
+            }
         }
-        if (KIT_STATUS_SUCCESS != status)
+        else
         {
-            break;
-        }
+            /* read status register/length bytes to know number of bytes to read */
+            if (true == SERCOM1_SPI_Read(rxdata, read_length))
+            {
+                /* Wait for the SPI transfer to complete */
+                status = check_spi_busy(1000000, read_length);
+            }
 
-        if (1 == read_length)
-        {
-            break;
-        }
+            if (KIT_STATUS_SUCCESS != status)
+            {
+                break;
+            }
 
-        /*Calculate bytes to read based on device response*/
-        read_length = ((uint16_t)rxdata[0] * 256) + rxdata[1];
+            if (1 == read_length)
+            {
+                break;
+            }
 
-        if (read_length > rxdata_max_size)
-        {
-            status = KIT_STATUS_SMALL_BUFFER;
-            break;
-        }
+            /*Calculate bytes to read based on device response*/
+            read_length = ((uint16_t)rxdata[0] * 256) + rxdata[1];
 
-        if (read_length < 5)
-        {
+            if (read_length > rxdata_max_size)
+            {
+                status = KIT_STATUS_SMALL_BUFFER;
+                break;
+            }
+
+            if (read_length < 5)
+            {
+                status = KIT_STATUS_RX_FAIL;
+                break;
+            }
+
+            /* Read given length bytes from device */
             status = KIT_STATUS_RX_FAIL;
-            break;
+            if (true == SERCOM1_SPI_Read(&rxdata[2], read_length - 2))
+            {
+                /* Wait for the SPI transfer to complete */
+                status = check_spi_busy(1000000, read_length - 2);
+
+            }         
         }
 
-        /* Read given length bytes from device */
-        status = KIT_STATUS_RX_FAIL;
-        if (true == SERCOM1_SPI_Read(&rxdata[2], read_length - 2))
-        {
-            /* Wait for the SPI transfer to complete */
-            status = check_spi_busy(1000000, read_length - 2);
-
-        }
         if (KIT_STATUS_SUCCESS != status)
         {
             break;
         }
-
+        
     }
     while (0);
 

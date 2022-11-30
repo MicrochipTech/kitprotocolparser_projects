@@ -6,6 +6,7 @@ Introduction
 This code base implements an object-oriented C library which supports
 Microchip CryptoAuth devices.  The family of devices supported currently are:
 
+- [ATECC608B](http://www.microchip.com/ATECC608B)
 - [ATECC608A](http://www.microchip.com/ATECC608A)
 - [ATECC508A](http://www.microchip.com/ATECC508A)
 - [ATECC108A](http://www.microchip.com/ATECC108A)
@@ -45,8 +46,11 @@ git checkout master
 
 Release notes for DM320118
 ------------------------------------------------------
+ 1.0.6
+  - Updated SPI for Fast Crypto reads
+
  1.0.4
-  - Discovery issue for CryptoAUTH-XPRO boards are fixed 
+  - Discovery issue for CryptoAUTH-XPRO boards are fixed
 
  1.0.3
   - Added UART interface to host
