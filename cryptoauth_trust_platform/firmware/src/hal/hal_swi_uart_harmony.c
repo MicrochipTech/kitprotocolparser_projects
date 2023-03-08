@@ -490,7 +490,7 @@ void hal_swi_discover(device_info_t *device_list, uint8_t* dev_count)
     enum kit_protocol_status ret_code;
     uint8_t info_message[] = { 0x07, 0x30, 0x00, 0x00, 0x00, 0x03, 0x5D };
     uint8_t sha_ecc_wake_response[] = { 0x04, 0x11, 0x33, 0x43 };
-    uint8_t device_data[7] = { 0 };
+    uint8_t device_data[CMD_MAX_BUFFER_LEN] = { 0 };
     uint16_t length;
 
     *dev_count = 0;

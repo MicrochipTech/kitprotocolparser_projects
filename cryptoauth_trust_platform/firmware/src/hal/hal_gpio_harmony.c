@@ -436,11 +436,10 @@ enum kit_protocol_status hal_gpio_talk(uint32_t device_addr, uint8_t* data, uint
 enum kit_protocol_status ca_gpio_discover(uint8_t device_addr, uint8_t* device_rev, device_type_t* dev_type)
 {
     enum kit_protocol_status ret_code = KIT_STATUS_FAILURE;
-    //Setting buffer size 1 byte extra as hal adds code to the buffer
-    uint8_t device_info[] = {0x07, 0x30, 0x00, 0x00, 0x00, 0x03, 0x5D, 0x00};
-    uint16_t tx_length = sizeof(device_info) - 1;
+    uint8_t device_info[CMD_MAX_BUFFER_LEN] = {0x07, 0x30, 0x00, 0x00, 0x00, 0x03, 0x5D};
+    uint16_t tx_length = device_info[0];
     uint16_t rx_length = sizeof(device_info);
-
+    
     if ((ret_code = gpio_interface_talk(device_addr, device_info, &tx_length, &rx_length)) == KIT_STATUS_SUCCESS)
     {
         ret_code = KIT_STATUS_FAILURE;
@@ -493,17 +492,16 @@ void hal_gpio_discover(device_info_t* device_list, uint8_t* dev_count)
         //Probe for device presence
         if (KIT_STATUS_SUCCESS == (ret_code = hal_gpio_send(address, NULL, NULL)))
         {
-            if ((KIT_STATUS_SUCCESS == (ret_code = ca_gpio_discover(address, device_list->dev_rev, &(device_list->device_type)))))
+            (void)ca_gpio_discover(address, device_list->dev_rev, &(device_list->device_type));
+                
+            device_list->address = address;
+            device_list->bus_type = DEVKIT_IF_SWI2;
+            (*dev_count)++;
+            if (*dev_count == MAX_DISCOVER_DEVICES)
             {
-                device_list->address = address;
-                device_list->bus_type = DEVKIT_IF_SWI2;
-                (*dev_count)++;
-                if (*dev_count == MAX_DISCOVER_DEVICES)
-                {
-                    break;
-                }
-                device_list++;
+                break;
             }
+            device_list++;
         }
     }
 }

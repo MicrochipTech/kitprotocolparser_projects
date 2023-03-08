@@ -339,9 +339,10 @@ enum kit_protocol_status read_ta_spi_resp(uint32_t device_addr, uint8_t* rxdata,
 enum kit_protocol_status ta_spi_discover(uint8_t device_addr, uint8_t* device_rev, device_type_t* dev_type)
 {
     enum kit_protocol_status ret_code = KIT_STATUS_FAILURE;
-    uint8_t info_packet[13] = {0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC2, 0x70};
+    uint8_t info_packet[CMD_MAX_RSP_SIZE] = {0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC2, 0x70};
     uint16_t txlength = 11;
     uint16_t rxlength = 13;
+    
     if (KIT_STATUS_SUCCESS == (ret_code = hal_spi_send(device_addr, info_packet, &txlength)))
     {
         atca_delay_ms(5);

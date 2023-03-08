@@ -475,11 +475,10 @@ enum kit_protocol_status read_ta_resp(uint32_t device_addr, uint8_t* rxdata, uin
 enum kit_protocol_status ca_discover(uint8_t device_addr, uint8_t* device_rev, device_type_t* dev_type)
 {
     enum kit_protocol_status ret_code = KIT_STATUS_FAILURE;
-    //Setting buffer size 1 byte extra as hal adds code to the buffer
-    uint8_t device_info[] = {0x07, 0x30, 0x00, 0x00, 0x00, 0x03, 0x5D, 0x00};
-    uint16_t tx_length = sizeof(device_info)-1;
+    uint8_t device_info[CMD_MAX_BUFFER_LEN] = {0x07, 0x30, 0x00, 0x00, 0x00, 0x03, 0x5D};
+    uint16_t tx_length = device_info[0];
     uint16_t rx_length = sizeof(device_info);
-
+    
     if ((ret_code = i2c_interface_talk(device_addr, device_info, &tx_length, &rx_length)) == KIT_STATUS_SUCCESS)
     {
         ret_code = KIT_STATUS_FAILURE;
@@ -503,10 +502,11 @@ enum kit_protocol_status ca_discover(uint8_t device_addr, uint8_t* device_rev, d
 enum kit_protocol_status ta_discover(uint8_t device_addr, uint8_t* device_rev, device_type_t* dev_type)
 {
     enum kit_protocol_status ret_code = KIT_STATUS_FAILURE;
-    uint8_t info_packet[13] = {0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC2, 0x70};
+    uint8_t info_packet[CMD_MAX_RSP_SIZE] = {0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC2, 0x70};
     uint16_t txlength = 11;
     uint16_t rxlength = 13;
     g_selected_device_type = DEVICE_TYPE_TA100;
+    
     if (KIT_STATUS_SUCCESS == (ret_code = hal_i2c_send(device_addr, info_packet, &txlength)))
     {
         kit_delay_ms(5);
@@ -559,22 +559,21 @@ void hal_i2c_discover(device_info_t* device_list, uint8_t* dev_count)
         //Probe for device presence
          if (KIT_STATUS_SUCCESS == (ret_code = hal_i2c_send(i2c_address, NULL, &probe_data_size)))
         {
-            if ((KIT_STATUS_SUCCESS == (ret_code = ca_discover(i2c_address, device_list->dev_rev, &(device_list->device_type)))) ||
-                (KIT_STATUS_SUCCESS == (ret_code = ta_discover(i2c_address, device_list->dev_rev, &(device_list->device_type)))) ||
-                (KIT_STATUS_SUCCESS == (ret_code = aes_discover(i2c_address, device_list->dev_rev, &(device_list->device_type)))))
+            (void)ca_discover(i2c_address, device_list->dev_rev, &(device_list->device_type));
+            (void)ta_discover(i2c_address, device_list->dev_rev, &(device_list->device_type));
+            (void)aes_discover(i2c_address, device_list->dev_rev, &(device_list->device_type));
+                
+            device_list->address = i2c_address - 0x01;
+            device_list->bus_type = DEVKIT_IF_I2C;
+            (*dev_count)++;
+            current_dev = device_list->device_type;
+            if (*dev_count == MAX_DISCOVER_DEVICES)
             {
-                device_list->address = i2c_address - 0x01;
-                device_list->bus_type = DEVKIT_IF_I2C;
-                (*dev_count)++;
-                current_dev = device_list->device_type;
-                if (*dev_count == MAX_DISCOVER_DEVICES)
-                {
-                    break;
-                }
-                device_list++;
+                break;
             }
+            device_list++;
         }
-        if ((DEVICE_TYPE_ECC204 != current_dev) && (DEVICE_TYPE_TA010 != current_dev) && (DEVICE_TYPE_SHA104 != current_dev) && (DEVICE_TYPE_SHA105 != current_dev) && (DEVICE_TYPE_SHA106 != current_dev) && (DEVICE_TYPE_RNG90 != current_dev) && (DEVICE_TYPE_ECC206 != current_dev))
+        if ((DEVICE_TYPE_UNKNOWN != current_dev) && (DEVICE_TYPE_ECC204 != current_dev) && (DEVICE_TYPE_TA010 != current_dev) && (DEVICE_TYPE_SHA104 != current_dev) && (DEVICE_TYPE_SHA105 != current_dev) && (DEVICE_TYPE_SHA106 != current_dev) && (DEVICE_TYPE_RNG90 != current_dev) && (DEVICE_TYPE_ECC206 != current_dev))
         {
             (void)hal_i2c_idle(i2c_address);
         }

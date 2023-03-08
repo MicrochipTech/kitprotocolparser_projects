@@ -33,6 +33,8 @@
 #include <stdint.h>
 #include "kit_hal_interface.h"
 
+#define CMD_MAX_BUFFER_LEN                         ((uint8_t)254)
+
 #define MAIN_PROCESSOR_RD_CMD                      0x10
 #define MAIN_PROCESSOR_RD_CSR                      0x30
 #define FAST_CRYPTO_RD_FSR                         0xB0
