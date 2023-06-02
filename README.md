@@ -46,14 +46,27 @@ git checkout master
 
 Release notes for DM320118
 ------------------------------------------------------
+ 1.1.0
+  - Added device support for TA101 device
+  
+ 1.0.7
+  - Updated device discovery to list unknown devices with their address
+
  1.0.6
-  - Updated SPI for Fast Crypto reads
+  - Updated SPI for TA100 FCE reads
+
+ 1.0.5
+  - Added support for TA010, SHA104, SHA105, SHA106, RNG90, ECC206 devices
 
  1.0.4
-  - Discovery issue for CryptoAUTH-XPRO boards are fixed
+  - Discovery issue for CryptoAUTH-XPRO boards are fixed 
 
  1.0.3
   - Added UART interface to host
+
+ 1.0.2
+  - Fixed Emerlad I2C and SWI issues
+  - Added support for no polling method in emerald swi mode
 
 List of Host Projects
 -----------------------------

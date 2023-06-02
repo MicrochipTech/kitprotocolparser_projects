@@ -33,7 +33,7 @@
 #include "kitprotocol_parser_info.h"
 
 #define KIT_NAME_HEADER "CryptoAuth Trust Platform(DM320118)"
-#define BOARD_APPLICATION_VERSION   "1.0.7"
+#define BOARD_APPLICATION_VERSION   "1.1.0"
 #define STRING_EOL      "\r"
 
 #define STRING_HEADER   "\r-- " KIT_NAME_HEADER" --\r\n" \

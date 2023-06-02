@@ -292,7 +292,7 @@ enum kit_protocol_status hal_i2c_receive(uint32_t device_addr, uint8_t *rxdata, 
     do
     {
         /*Send Word address to device...*/
-        if (DEVICE_TYPE_TA100 == g_selected_device_type)
+        if (check_ta_device(g_selected_device_type))
         {
             word_address = rxdata[0];
             length_size = 2;
@@ -333,7 +333,7 @@ enum kit_protocol_status hal_i2c_receive(uint32_t device_addr, uint8_t *rxdata, 
                 status = KIT_STATUS_RX_FAIL;
                 break;
             }
-            if ((DEVICE_TYPE_TA100 != g_selected_device_type) && (read_length >= 0xFF))
+            if ((check_ta_device(g_selected_device_type) != true) && (read_length >= 0xFF))
             {
                 status = KIT_STATUS_RX_NO_RESPONSE;
                 break;
@@ -505,7 +505,7 @@ enum kit_protocol_status ta_discover(uint8_t device_addr, uint8_t* device_rev, d
     uint8_t info_packet[CMD_MAX_RSP_SIZE] = {0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC2, 0x70};
     uint16_t txlength = 11;
     uint16_t rxlength = 13;
-    g_selected_device_type = DEVICE_TYPE_TA100;
+    g_selected_device_type = DEVICE_TYPE_TA100;   // indication flag for TA devices
     
     if (KIT_STATUS_SUCCESS == (ret_code = hal_i2c_send(device_addr, info_packet, &txlength)))
     {
@@ -516,7 +516,7 @@ enum kit_protocol_status ta_discover(uint8_t device_addr, uint8_t* device_rev, d
             {
                 ret_code = KIT_STATUS_SUCCESS;
                 memcpy(device_rev, &info_packet[3], 8);
-                *dev_type = DEVICE_TYPE_TA100;
+                *dev_type = ta10x_device_type(device_rev);
             }
         }
     }

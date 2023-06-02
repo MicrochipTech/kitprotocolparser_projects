@@ -352,7 +352,7 @@ enum kit_protocol_status ta_spi_discover(uint8_t device_addr, uint8_t* device_re
             {
                 ret_code = KIT_STATUS_SUCCESS;
                 memcpy(device_rev, &info_packet[3], 8);
-                *dev_type = DEVICE_TYPE_TA100;
+                *dev_type = ta10x_device_type(device_rev);
             }
         }
     }
